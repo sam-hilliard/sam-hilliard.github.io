@@ -1,88 +1,102 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <title>Sam Hilliard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="assets/style.css" />
+    <meta charset="utf-8" />
+    <title>Sam Hilliard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-  <header>
-    <nav>
-      <h1>Sam Hilliard</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#links">Links</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <h1 class="brand"><a href="index.html">Sam Hilliard</a></h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section id="blurb">
-      <h2>Professional Blurb</h2>
-      <p>Full-time Quality Engineer and Security Champion at ServiceNow. Outside of work, I hunt for security vulnerabilities and share my learnings with the community.</p>
-    </section>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Born and raised in San Diego, where I grew up surfing and spending time at the beach. I’m currently based in Maine, enjoying nature and converting a van into my future full-time home. When I’m not working on the van, I’m usually out hiking or birdwatching (proud bird nerd).</p>
-    </section>
+    <main>
+        <section id="blurb">
+            <p>Full-time Quality Engineer and Security Champion at ServiceNow. Outside of work, I hunt for security
+                vulnerabilities and share my learnings with the community.</p>
+        </section>
 
-    <section id="skills">
-      <h2>Skills &amp; Certifications</h2>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="assets/profile.jpg" alt="Sam Hilliard" class="profile-img" />
+            <p>Born and raised in San Diego, where I grew up surfing and spending time at the beach. I’m currently based
+                in Maine, enjoying nature and converting a van into my future full-time home. When I’m not working on
+                the van, I’m usually out hiking or birdwatching (proud bird nerd).</p>
+        </section>
 
-      <h3>Web Application Security</h3>
-      <ul>
-        <li>Web Application Recon</li>
-        <li>API Testing</li>
-        <li>OWASP Top 10</li>
-        <li>Burp Suite</li>
-        <li>Bug Bounty Hunting (PortSwigger Web Security Academy, TCM Security Practical Bug Bounty)</li>
-      </ul>
 
-      <h3>Quality Engineering &amp; ServiceNow</h3>
-      <ul>
-        <li>2 years as QE at ServiceNow</li>
-        <li>Security Champion</li>
-        <li>Threat Modeling</li>
-        <li>ServiceNow Administration</li>
-        <li>ACLs</li>
-      </ul>
+        <section id="skills">
+            <h2>Skills &amp; Certifications</h2>
 
-      <h3>Penetration Testing (GIAC GPEN)</h3>
-      <ul>
-        <li>Recon &amp; Network Mapping</li>
-        <li>Initial Access</li>
-        <li>Lateral Movement &amp; Privilege Escalation</li>
-        <li>Windows on-Prem &amp; Azure AD Exploitation</li>
-      </ul>
+            <h3>Web Application Security</h3>
+            <ul>
+                <li>Web Application Recon</li>
+                <li>API Testing</li>
+                <li>OWASP Top 10</li>
+                <li>Burp Suite</li>
+                <li>Bug Bounty Hunting (PortSwigger Web Security Academy, TCM Security Practical Bug Bounty)</li>
+            </ul>
 
-      <h3>Reverse Engineering</h3>
-      <ul>
-        <li>Ghidra</li>
-        <li>GDB</li>
-        <li>Reverse Engineering Binaries &amp; Executables (<a href="https://guyinatuxedo.github.io/">Nightmare Course</a>)</li>
-      </ul>
-    </section>
+            <h3>Quality Engineering &amp; ServiceNow</h3>
+            <ul>
+                <li>2 years as QE at ServiceNow</li>
+                <li>Security Champion</li>
+                <li>Threat Modeling</li>
+                <li>ServiceNow Administration</li>
+                <li>ACLs</li>
+            </ul>
 
-    <section id="links">
-      <h2>Profile Links</h2>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/sam-hilliard-35941b1aa/">LinkedIn</a></li>
-        <li><a href="https://hackerone.com/sambamsam?type=user">HackerOne</a></li>
-        <li><a href="https://github.com/sam-hilliard">GitHub</a></li>
-      </ul>
-    </section>
-  </main>
+            <h3>Penetration Testing (GIAC GPEN)</h3>
+            <ul>
+                <li>Recon &amp; Network Mapping</li>
+                <li>Initial Access</li>
+                <li>Lateral Movement &amp; Privilege Escalation</li>
+                <li>Windows on-Prem &amp; Azure AD Exploitation</li>
+            </ul>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Sam Hilliard</p>
-  </footer>
+            <h3>Reverse Engineering</h3>
+            <ul>
+                <li>Ghidra</li>
+                <li>GDB</li>
+                <li>Reverse Engineering Binaries &amp; Executables (<a href="https://guyinatuxedo.github.io/">Nightmare
+                        Course</a>)</li>
+            </ul>
+        </section>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+        <section id="links">
+            <h2>Find me on</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/sam-hilliard-35941b1aa/"><i class="fab fa-linkedin"></i>
+                        LinkedIn</a></li>
+                <li><a href="https://hackerone.com/sambamsam?type=user"><i class="fa-solid fa-bug"></i> HackerOne</a>
+                </li>
+                <li><a href="https://github.com/sam-hilliard"><i class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Sam Hilliard</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
