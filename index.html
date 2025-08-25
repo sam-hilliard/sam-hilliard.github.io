@@ -1,6 +1,88 @@
-<!doctype html><meta charset="utf-8" />
-<title>Sam Hilliard</title>
-<link rel="stylesheet" href="/assets/style.css">
-<main>
-    <h1>Hello!</h1>
-</main>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sam Hilliard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Sam Hilliard</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="blurb">
+      <h2>Professional Blurb</h2>
+      <p>Full-time Quality Engineer and Security Champion at ServiceNow. Outside of work, I hunt for security vulnerabilities and share my learnings with the community.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Born and raised in San Diego, where I grew up surfing and spending time at the beach. I’m currently based in Maine, enjoying nature and converting a van into my future full-time home. When I’m not working on the van, I’m usually out hiking or birdwatching (proud bird nerd).</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills &amp; Certifications</h2>
+
+      <h3>Web Application Security</h3>
+      <ul>
+        <li>Web Application Recon</li>
+        <li>API Testing</li>
+        <li>OWASP Top 10</li>
+        <li>Burp Suite</li>
+        <li>Bug Bounty Hunting (PortSwigger Web Security Academy, TCM Security Practical Bug Bounty)</li>
+      </ul>
+
+      <h3>Quality Engineering &amp; ServiceNow</h3>
+      <ul>
+        <li>2 years as QE at ServiceNow</li>
+        <li>Security Champion</li>
+        <li>Threat Modeling</li>
+        <li>ServiceNow Administration</li>
+        <li>ACLs</li>
+      </ul>
+
+      <h3>Penetration Testing (GIAC GPEN)</h3>
+      <ul>
+        <li>Recon &amp; Network Mapping</li>
+        <li>Initial Access</li>
+        <li>Lateral Movement &amp; Privilege Escalation</li>
+        <li>Windows on-Prem &amp; Azure AD Exploitation</li>
+      </ul>
+
+      <h3>Reverse Engineering</h3>
+      <ul>
+        <li>Ghidra</li>
+        <li>GDB</li>
+        <li>Reverse Engineering Binaries &amp; Executables (<a href="https://guyinatuxedo.github.io/">Nightmare Course</a>)</li>
+      </ul>
+    </section>
+
+    <section id="links">
+      <h2>Profile Links</h2>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/sam-hilliard-35941b1aa/">LinkedIn</a></li>
+        <li><a href="https://hackerone.com/sambamsam?type=user">HackerOne</a></li>
+        <li><a href="https://github.com/sam-hilliard">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Sam Hilliard</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
