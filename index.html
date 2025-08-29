@@ -5,11 +5,12 @@
     <meta charset="utf-8" />
     <title>Sam Hilliard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Sam Hilliard — QE & Security Champion. Web app security, pentesting, reverse engineering, and technical writing." />
     <link rel="stylesheet" href="assets/style.css" />
-    <!-- font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- favicon -->
+    <!-- favicon set -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
@@ -18,13 +19,16 @@
     <link rel="icon" href="assets/icon/android-chrome-192x192.png" sizes="192x192">
     <link rel="icon" href="assets/icon/android-chrome-512x512.png" sizes="512x512">
 
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400..700&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1 class="brand"><a href="index.html">Sam Hilliard</a></h1>
-            <ul>
+    <header class="site-header">
+        <nav class="container nav">
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#links">Links</a></li>
@@ -33,74 +37,125 @@
         </nav>
     </header>
 
-
-    <main>
-        <section id="blurb">
-            <p>Full-time Quality Engineer and Security Champion at ServiceNow. Outside of work, I hunt for security
-                vulnerabilities and share my learnings with the community.</p>
+    <main class="container">
+        <section id="blurb" class="lead">
+            <h2>I'm</h2>
+            <h1>Sam Hilliard</h2>
+                <p>Full-time Quality Engineer and Security Champion at ServiceNow. Outside of work, I hunt for security
+                    vulnerabilities and share my learnings with the community. I love continuously learning and
+                    challenging
+                    myself.</p>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="assets/images/wooper.png" alt="Sam Hilliard" class="profile-img" />
-            <p>Born and raised in San Diego, where I grew up surfing and spending time at the beach. I’m currently based
-                in Maine, enjoying nature and converting a van into my future full-time home. When I’m not working on
-                the van, I’m usually out hiking or birdwatching (proud bird nerd).</p>
+        <section id="about" class="section">
+            <h2>About</h2>
+            <div class="about">
+                <p>Born and raised in Carlsbad, CA. Grew up surfing and spending time at the beach.
+                    Temporarily a Mainer, where I'm converting a van into a home on wheels. Tree hugger and bird nerd.
+                </p>
+            </div>
         </section>
 
-
-        <section id="skills">
+        <section id="skills" class="section">
             <h2>Skills &amp; Certifications</h2>
 
-            <h3>Web Application Security</h3>
-            <ul>
-                <li>Web Application Recon</li>
-                <li>API Testing</li>
-                <li>OWASP Top 10</li>
-                <li>Burp Suite</li>
-                <li>Bug Bounty Hunting (PortSwigger Web Security Academy, TCM Security Practical Bug Bounty)</li>
-            </ul>
+            <div class="skills-rows">
+                <div class="row">
+                    <h3>Web Application Security</h3>
+                    <div class="desc">
+                        <p>Self-taught bug hunter on HackerOne. I focus on web APIs, logic flaws, and authorization.
+                            Always learning new skills and challenging myself.</p>
+                        <p>Tools: Burp Suite Pro, Postman, Scipting</p>
+                        <p>Learnings: <a href="https://portswigger.net/web-security">Portswigger Web Academy</a>, <a
+                                href="https://academy.tcm-sec.com/p/practical-bug-bounty">TCM Practical Bug Bounty</a>,
+                            <a href="https://www.apisecuniversity.com/courses/api-penetration-testing">API Sec
+                                University</a>
+                        </p>
+                    </div>
+                </div>
 
-            <h3>Quality Engineering &amp; ServiceNow</h3>
-            <ul>
-                <li>2 years as QE at ServiceNow</li>
-                <li>Security Champion</li>
-                <li>Threat Modeling</li>
-                <li>ServiceNow Administration</li>
-                <li>ACLs</li>
-            </ul>
+                <div class="row">
+                    <h3>Quality Engineering and Security Champion at ServiceNow</h3>
+                    <div class="desc">
+                        <p>Testing and automating testing of Agentic AI on the ServiceNow Platform. As a Security
+                            Champion, I advocate security best practices and use my expertise to secure the product.</p>
+                        <p>Tools: PlayWright Java, Devici, ServiceNow Platform</p>
+                        <p>Learnings: Threat Modeling, Agile, ServiceNow Administration, ACLs</p>
+                    </div>
+                </div>
 
-            <h3>Penetration Testing (GIAC GPEN)</h3>
-            <ul>
-                <li>Recon &amp; Network Mapping</li>
-                <li>Initial Access</li>
-                <li>Lateral Movement &amp; Privilege Escalation</li>
-                <li>Windows on-Prem &amp; Azure AD Exploitation</li>
-            </ul>
+                <div class="row">
+                    <h3>Penetration Testing</h3>
+                    <div class="desc">
+                        <p>Base-level knowledge of the workflow, including recon, initial access, pivoting, priv-esc,
+                            and reporting. Focus on Windows on-prem and cloud domains. Networking from a security
+                            perspective.</p>
+                        <p>Tools: VM Ware, Impacket Suite, Sliver, Metasploit, Responder, Nmap</p>
+                        <p>How learned: <a
+                                href="https://www.sans.org/cyber-security-courses/enterprise-penetration-testing">GIAC
+                                GPEN</a>, <a href="https://www.hackthebox.com/">HackTheBox</a>, <a
+                                href="https://tryhackme.com/">TryHackMe</a></p>
+                    </div>
+                </div>
 
-            <h3>Reverse Engineering</h3>
-            <ul>
-                <li>Ghidra</li>
-                <li>GDB</li>
-                <li>Reverse Engineering Binaries &amp; Executables (<a href="https://guyinatuxedo.github.io/">Nightmare
-                        Course</a>)</li>
-            </ul>
+                <div class="row">
+                    <h3>Reverse Engineering</h3>
+                    <div class="desc">
+                        <p>Analyzes binaries for basic CTFs and Labs. womfortable reading disassembly and stepping
+                            through execution. Would love to turn this hobby towards malware analysis and Zero-day
+                            discover Would love to turn this hobby towards malware analysis and Zero-day discovery.</p>
+                        <p>Tools: Ghidra, GDB, C, Python Pwntools</p>
+                        <p>Learnings: <a href="https://guyinatuxedo.github.io/">Nightmare</a></p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="links">
-            <h2>Find me on</h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/sam-hilliard-35941b1aa/"><i class="fab fa-linkedin"></i>
-                        LinkedIn</a></li>
-                <li><a href="https://hackerone.com/sambamsam?type=user"><i class="fa-solid fa-bug"></i> HackerOne</a>
-                </li>
-                <li><a href="https://github.com/sam-hilliard"><i class="fab fa-github"></i> GitHub</a></li>
-            </ul>
+        <section id="services" class="section">
+            <h2>Consulting Services</h2>
+            <p class="intro">Short, focused engagements for startups and SMBs. Straightforward scope, practical
+                findings, and clear remediation steps.</p>
+
+            <div class="offers">
+                <article class="offer">
+                    <h3>Basic Web Pentest</h3>
+                    <p>Security assessment and functional testing of a web application.</p>
+                    <ul>
+                        <li>Authentication and authorization checks</li>
+                        <li>OWASP Top 10</li>
+                        <li>Vulnerability discovery</li>
+                        <li>Mitigation recommendations</li>
+                    </ul>
+                    <a class="btn"
+                        href="mailto:samhilliard51@gmail.com?subject=Consulting%20Inquiry%20-%20Web%20Pentest%20%2B%20QE">Book
+                        this</a>
+                </article>
+
+                <article class="offer">
+                    <h3>API Pentesting</h3>
+                    <p>Focused API review with emphasis on authorization, object-level security, and logic flaws.</p>
+                    <ul>
+                        <li>Endpoint discovery & parameter analysis</li>
+                        <li>Authorization and access control checks</li>
+                        <li>Input handling, rate limiting, error semantics</li>
+                    </ul>
+                    <a class="btn"
+                        href="mailto:samhilliard51@gmail.com?subject=Consulting%20Inquiry%20-%20API%20Pentest">Book
+                        this</a>
+                </article>
+            </div>
         </section>
+
 
     </main>
 
-    <footer>
+    <footer class="container site-footer">
+        <ul class="links">
+            <li><a href="https://www.linkedin.com/in/sam-hilliard-35941b1aa/"><i class="fab fa-linkedin"></i>
+                    LinkedIn</a></li>
+            <li><a href="https://hackerone.com/sambamsam?type=user"><i class="fa-solid fa-bug"></i> HackerOne</a></li>
+            <li><a href="https://github.com/sam-hilliard"><i class="fab fa-github"></i> GitHub</a></li>
+        </ul>
         <p>&copy; <span id="year"></span> Sam Hilliard</p>
     </footer>
 
