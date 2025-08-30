@@ -19,6 +19,7 @@
   <link rel="icon" href="assets/icon/android-chrome-512x512.png" sizes="512x512">
 
   <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#links">Links</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
@@ -41,6 +42,9 @@
       <p>Full-time Quality Engineer and Security Champion at ServiceNow. Outside of work, I hunt for security
         vulnerabilities and share my learnings with the community. I love continuously learning and challenging
         myself.</p>
+      <div class="ctas">
+        <a class="btn" href="https://www.linkedin.com/in/sam-hilliard-35941b1aa/">Contact Me</a>
+      </div>
     </section>
 
     <section id="about" class="section">
@@ -49,6 +53,7 @@
         <p>Born and raised in Carlsbad, CA. Grew up surfing and spending time at the beach.
           Temporarily a Mainer, where I'm converting a van into a home on wheels. Tree hugger and bird nerd.
         </p>
+        <img id="profile-pic" src="assets/profile.png" alt="Me sitting on the L.L. Bean Boot.">
       </div>
     </section>
 
@@ -57,72 +62,70 @@
 
       <div class="skills-rows">
         <div class="row">
-            <h3>Web Application Security</h3>
-            <div class="desc">
-              <p>Self-taught bug hunter on HackerOne. I focus on web APIs, logic flaws, and authorization.
-                Always learning new skills and challenging myself.</p>
+          <h3>Web Application Security</h3>
+          <div class="desc">
+            <p>Self-taught bug hunter on HackerOne. I focus on web APIs, logic flaws, and authorization.
+              Always learning new skills and challenging myself.</p>
           </div>
           <div class="skill-pills">
             <ul>
-                <li>OWASP Top 10</li>
-                <li>API Pentests</li>
-                <li>BurpSuite Pro</li>
-                <li>Automated Recon</li>
+              <li>OWASP Top 10</li>
+              <li>API Pentests</li>
+              <li>BurpSuite Pro</li>
+              <li>Automated Recon</li>
             </ul>
           </div>
         </div>
 
         <div class="row">
-            <h3>Quality Engineering and Security Champion at ServiceNow</h3>
-            <div class="desc">
-              <p>Testing and automating testing of Agentic AI on the ServiceNow Platform. As a Security
-                Champion, I advocate security best practices and use my expertise to secure the product.</p>
-            </div>
-            <div class="skill-pills">
-              <ul>
-                <li>LLM Security</li>
-                <li>Threat Modeling</li>
-                <li>ACLs</li>
-                <li>Automation Testing</li>
-              </ul>
-            </div>
+          <h3>Quality Engineering and Security Champion at ServiceNow</h3>
+          <div class="desc">
+            <p>Testing and automating testing of Agentic AI on the ServiceNow Platform. As a Security
+              Champion, I advocate security best practices and use my expertise to secure the product.</p>
+          </div>
+          <div class="skill-pills">
+            <ul>
+              <li>LLM Security</li>
+              <li>Threat Modeling</li>
+              <li>ACLs</li>
+              <li>Automation Testing</li>
+            </ul>
           </div>
         </div>
 
         <div class="row">
-            <h3>Penetration Testing</h3>
-            <div class="desc">
-              <p>Base-level knowledge of the workflow, including recon, initial access, pivoting, priv-esc,
-                and reporting. Focus on Windows on-prem and cloud domains. Networking from a security
-                perspective.</p>
-            </div>
-            <div class="skill-pills">
-              <ul>
-                <li>Active Directory</li>
-                <li>Network Security</li>
-                <li>Azure</li>
-                <li>Command and Control</li>
-              </ul>
-            </div>
+          <h3>Penetration Testing</h3>
+          <div class="desc">
+            <p>Base-level knowledge of the workflow, including recon, initial access, pivoting, priv-esc,
+              and reporting. Focus on Windows on-prem and cloud domains. Networking from a security
+              perspective.</p>
+          </div>
+          <div class="skill-pills">
+            <ul>
+              <li>Active Directory</li>
+              <li>Network Security</li>
+              <li>Azure</li>
+              <li>Command and Control</li>
+            </ul>
+          </div>
         </div>
 
         <div class="row">
-            <h3>Reverse Engineering</h3>
-            <div class="desc">
-              <p>Analyzes binaries for basic CTFs and Labs. womfortable reading disassembly and stepping
-                through execution. Would love to turn this hobby towards malware analysis and Zero-day
-                discover Would love to turn this hobby towards malware analysis and Zero-day discovery.</p>
-            </div>
-            <div class="skill-pills">
-              <ul>
-                <li>Ghidra</li>
-                <li>GDB</li>
-                <li>Assembly</li>
-                <li>Python PwnTools</li>
-              </ul>
-            </div>
+          <h3>Reverse Engineering</h3>
+          <div class="desc">
+            <p>Analyzes binaries for basic CTFs and Labs. Comfortable reading disassembly and stepping
+              through execution. Would love to turn this hobby towards malware analysis and Zero-day discovery.</p>
+          </div>
+          <div class="skill-pills">
+            <ul>
+              <li>Ghidra</li>
+              <li>GDB</li>
+              <li>Assembly</li>
+              <li>Python PwnTools</li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </div> <!-- end .skills-rows -->
     </section>
 
     <section id="services" class="section">
@@ -139,7 +142,7 @@
             <li>Vulnerability discovery</li>
             <li>Mitigation recommendations</li>
           </ul>
-          <a href="mailto:samhilliard51@gmail.com?subject=Consulting%20Inquiry%20-%20Web%20Pentest%20%2B%20QE">Reach out</a>
+          <a class="btn primary" href="https://www.linkedin.com/in/sam-hilliard-35941b1aa/">Reach out</a>
         </article>
 
         <article class="offer">
@@ -150,7 +153,7 @@
             <li>Authorization and access control checks</li>
             <li>Input handling, rate limiting, error semantics</li>
           </ul>
-          <a href="mailto:samhilliard51@gmail.com?subject=Consulting%20Inquiry%20-%20API%20Pentest">Reach out</a>
+          <a class="btn primary" href="https://www.linkedin.com/in/sam-hilliard-35941b1aa/">Reach out</a>
         </article>
       </div>
     </section>
