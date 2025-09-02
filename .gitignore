@@ -103,4 +103,9 @@ dist
 # TernJS port file
 .tern-port
 
-# client/build
+# Jekyll
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/

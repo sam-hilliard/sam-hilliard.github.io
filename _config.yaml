@@ -1,0 +1,19 @@
+title: "Sam Hilliard"
+description: "QE & Security Champion. Web/app sec, pentesting, RE, writing."
+url: "https://sam-hilliard.github.io"
+baseurl: ""              
+permalink: /blog/:title/ 
+
+markdown: kramdown
+theme: null              
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - node_modules
+  - README.md
+  - vendor
+  - .github
